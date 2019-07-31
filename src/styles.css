@@ -17,12 +17,18 @@
 /** todo item **/
 .todo-item {
   font-family: monospace;
-  cursor: pointer;
   line-height: 1.5;
+}
+.todo-item__text,
+.todo-item__delete {
+  cursor: pointer;
 }
 .todo-item__text--completed {
   text-decoration: line-through;
   color: lightgray;
+}
+.todo-item__delete {
+  color: red;
 }
 
 /** visibility filters **/
