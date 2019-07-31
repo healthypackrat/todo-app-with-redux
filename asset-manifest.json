@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/todo-app-with-redux/static/css/main.980ebfdc.chunk.css",
-    "main.js": "/todo-app-with-redux/static/js/main.4148f0bb.chunk.js",
-    "main.js.map": "/todo-app-with-redux/static/js/main.4148f0bb.chunk.js.map",
+    "main.js": "/todo-app-with-redux/static/js/main.27fb7662.chunk.js",
+    "main.js.map": "/todo-app-with-redux/static/js/main.27fb7662.chunk.js.map",
     "runtime~main.js": "/todo-app-with-redux/static/js/runtime~main.12f6794d.js",
     "runtime~main.js.map": "/todo-app-with-redux/static/js/runtime~main.12f6794d.js.map",
     "static/js/2.6bf06b14.chunk.js": "/todo-app-with-redux/static/js/2.6bf06b14.chunk.js",
     "static/js/2.6bf06b14.chunk.js.map": "/todo-app-with-redux/static/js/2.6bf06b14.chunk.js.map",
     "index.html": "/todo-app-with-redux/index.html",
-    "precache-manifest.eb53e986a9ca4b442cb8248af8f349e6.js": "/todo-app-with-redux/precache-manifest.eb53e986a9ca4b442cb8248af8f349e6.js",
+    "precache-manifest.29948fad9232bae3b62f4d53adc87348.js": "/todo-app-with-redux/precache-manifest.29948fad9232bae3b62f4d53adc87348.js",
     "service-worker.js": "/todo-app-with-redux/service-worker.js",
     "static/css/main.980ebfdc.chunk.css.map": "/todo-app-with-redux/static/css/main.980ebfdc.chunk.css.map"
   }
