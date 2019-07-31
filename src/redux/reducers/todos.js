@@ -38,10 +38,7 @@ export default function(state = initialState, action) {
       const { id } = action.payload;
       const newState = {
         ...state,
-        allIds: state.allIds.filter(_id => _id !== id),
-        byIds: {
-          ...state.byIds
-        }
+        allIds: state.allIds.filter(_id => _id !== id)
       };
       delete newState.byIds[id];
       return newState;
