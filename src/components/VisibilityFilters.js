@@ -1,38 +1,28 @@
 import React from "react";
-import cx from "classnames";
+import { NavLink } from 'react-router-dom'
 import { connect } from "react-redux";
-import { setFilter } from "../redux/actions";
 import { VISIBILITY_FILTERS } from "../constants";
 
-const VisibilityFilters = ({ activeFilter, setFilter }) => {
+const VisibilityFilters = ({ filter: activeFilter }) => {
   return (
     <div className="visibility-filters">
       {Object.keys(VISIBILITY_FILTERS).map(filterKey => {
         const currentFilter = VISIBILITY_FILTERS[filterKey];
         return (
-          <span
+          <NavLink
             key={`visibility-filter-${currentFilter}`}
-            className={cx(
-              "filter",
-              currentFilter === activeFilter && "filter--active"
-            )}
-            onClick={() => {
-              setFilter(currentFilter);
-            }}
+            exact
+            to={currentFilter === VISIBILITY_FILTERS.ALL ? '/' : `/${currentFilter}`}
+            className="filter"
+            activeClassName="filter--active"
           >
             {currentFilter}
-          </span>
+          </NavLink>
         );
       })}
     </div>
   );
 };
 
-const mapStateToProps = state => {
-  return { activeFilter: state.visibilityFilter };
-};
 // export default VisibilityFilters;
-export default connect(
-  mapStateToProps,
-  { setFilter }
-)(VisibilityFilters);
+export default connect()(VisibilityFilters);
