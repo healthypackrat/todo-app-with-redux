@@ -1,5 +1,5 @@
 import uuid from "uuid/v4";
-import { ADD_TODO, TOGGLE_TODO, DELETE_TODO, SET_FILTER } from "./actionTypes";
+import { ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "./actionTypes";
 
 export const addTodo = content => ({
   type: ADD_TODO,
@@ -18,5 +18,3 @@ export const deleteTodo = id => ({
   type: DELETE_TODO,
   payload: { id }
 });
-
-export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });
