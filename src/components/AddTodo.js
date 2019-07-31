@@ -12,7 +12,8 @@ class AddTodo extends React.Component {
     this.setState({ input });
   };
 
-  handleAddTodo = () => {
+  handleAddTodo = (e) => {
+    e.preventDefault();
     const input = this.state.input.trim();
     if (input) {
       this.props.addTodo(input);
@@ -22,15 +23,13 @@ class AddTodo extends React.Component {
 
   render() {
     return (
-      <div>
+      <form onSubmit={this.handleAddTodo}>
         <input
           onChange={e => this.updateInput(e.target.value)}
           value={this.state.input}
         />
-        <button className="add-todo" onClick={this.handleAddTodo}>
-          Add Todo
-        </button>
-      </div>
+        <input type="submit" className="add-todo" value="Add Todo" />
+      </form>
     );
   }
 }
